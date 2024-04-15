@@ -187,20 +187,76 @@
                     },
                     "message": {
                         "lcId": "D700A9F7718E204480781CD1762295D8199B",
-                        "defaultText": "Hey! What are you doing here?"
+                        "defaultText": "엿먹어 이 바보야"
                     },
                     "position": 0,
-                    "characterId": "D817084774AB154CCE68B7B2587B0058EBFA",
+                    "characterId": "9A8F21B05033014BFD78A3566E843985607A",
                     "partial": 0,
                     "fieldFlags": {
                         "duration": 1
                     },
                     "expressions": [],
-                    "animations": []
+                    "animations": [],
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
                 },
                 "indent": 0,
                 "uid": "AE1D9B194E38874E6B99C335DA1AA7359B3A",
                 "expanded": true
+            },
+            {
+                "id": "gs.ChangeTextSettings",
+                "params": {
+                    "numberDomain": "com.degica.vnm.default",
+                    "number": 0,
+                    "bold": 0,
+                    "italic": 0,
+                    "underline": 0,
+                    "smallCaps": 0,
+                    "strikeThrough": 0,
+                    "lineSpacing": 0,
+                    "padding": [
+                        6,
+                        0,
+                        6,
+                        0
+                    ],
+                    "font": "Verdana",
+                    "size": 40,
+                    "outline": 0,
+                    "shadow": 0,
+                    "outlineColor": {
+                        "red": 0,
+                        "green": 0,
+                        "blue": 0,
+                        "alpha": 255
+                    },
+                    "shadowColor": {
+                        "red": 0,
+                        "green": 0,
+                        "blue": 0,
+                        "alpha": 255
+                    },
+                    "fieldFlags": {
+                        "font": 1,
+                        "size": 1
+                    }
+                },
+                "indent": 0
+            },
+            {
+                "id": "vn.ChangeScene",
+                "params": {
+                    "scene": null,
+                    "savePrevious": 0,
+                    "erasePictures": 0,
+                    "eraseTexts": 0,
+                    "eraseVideos": 0
+                },
+                "uid": "28DCA9D18A21C34EBD9A8FA7198A5DDD7DC1",
+                "indent": 0,
+                "expanded": false
             }
         ],
         "background": {
@@ -246,9 +302,10 @@
         ],
         "stringVariables": [
             {
-                "name": "",
+                "name": "예은",
                 "index": 0,
-                "scope": 0
+                "scope": 0,
+                "domain": "com.degica.vnm.default"
             }
         ],
         "listVariables": [
