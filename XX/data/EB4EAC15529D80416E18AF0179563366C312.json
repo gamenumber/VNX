@@ -1,0 +1,263 @@
+{
+    "uid": "EB4EAC15529D80416E18AF0179563366C312",
+    "isLoaded": true,
+    "lastModificationTime": null,
+    "items": {
+        "type": "vn.scene",
+        "name": "test",
+        "parentId": "3EB0897BK4EAAA43A8SA91DEE65923801AB3",
+        "chapterUid": "3EB0897BK4EAAA43A8SA91DEE65923801AB3",
+        "commands": [
+            {
+                "id": "gs.PlaySound",
+                "params": {
+                    "sound": {
+                        "folderPath": "Audio/Music",
+                        "name": "Playful_-_Kidding_Around.ogg",
+                        "volume": 100,
+                        "playbackRate": 100
+                    },
+                    "musicEffect": 0,
+                    "loop": 0,
+                    "waitForCompletion": 0,
+                    "fieldFlags": {
+                        "sound.volume": 1,
+                        "sound.playbackRate": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "F6B0C7A7652A39494D48BA1445778AF925B3",
+                "indent": 0
+            },
+            {
+                "id": "vn.ChangeBackground",
+                "params": {
+                    "viewport": {
+                        "type": "scene"
+                    },
+                    "graphic": {
+                        "name": "SchoolOutside_Sunset1.png",
+                        "folderPath": "Graphics/Backgrounds/School",
+                        "hue": 0,
+                        "opacity": 255,
+                        "blending": 0,
+                        "tone": {
+                            "red": 0,
+                            "green": 0,
+                            "blue": 0,
+                            "grey": 0
+                        }
+                    },
+                    "layer": 0,
+                    "duration": 0,
+                    "waitForCompletion": 0,
+                    "blendMode": 0,
+                    "origin": 0,
+                    "zOrder": 0,
+                    "loopVertical": 0,
+                    "loopHorizontal": 0,
+                    "easing": {
+                        "type": 0,
+                        "inOut": 1
+                    },
+                    "animation": {
+                        "type": 1,
+                        "movement": 0,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "73103EC77F4A1841DB484A60F8D12B75904E",
+                "indent": 0
+            },
+            {
+                "id": "vn.CharacterJoinScene",
+                "params": {
+                    "viewport": {
+                        "type": "scene"
+                    },
+                    "predefinedPositionId": 2,
+                    "expressionId": null,
+                    "characterId": "D817084774AB154CCE68B7B2587B0058EBFA",
+                    "zOrder": 0,
+                    "origin": 0,
+                    "blendMode": 0,
+                    "positionType": 0,
+                    "motionBlur": {
+                        "enabled": 0,
+                        "delay": 2,
+                        "opacity": 100,
+                        "dissolveSpeed": 3
+                    },
+                    "position": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "animation": {
+                        "type": 1,
+                        "movement": 0,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "easing": {
+                        "type": 0,
+                        "inOut": 0
+                    },
+                    "duration": 0,
+                    "waitForCompletion": 1,
+                    "fieldFlags": {
+                        "duration": 0
+                    }
+                },
+                "uid": "F8A009521C6C044BEA0949633BC2C1289B06",
+                "indent": 0
+            },
+            {
+                "id": "vn.MessageBoxVisibility",
+                "params": {
+                    "duration": 30,
+                    "waitForCompletion": true,
+                    "id": "messageBox",
+                    "visible": 1,
+                    "animation": {
+                        "type": 0,
+                        "movement": 3,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "easing": {
+                        "type": 0,
+                        "inOut": 1
+                    },
+                    "fieldFlags": {
+                        "duration": 1
+                    }
+                },
+                "uid": "A73E2A1C1C497740B55ABD59A16CC4D37189",
+                "indent": 0
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": "BF7CB12110894142C299D341A545C910AA86",
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "잘 모르겠다 "
+                    },
+                    "position": 0,
+                    "characterId": 0,
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "uid": "41FCBBBF6223A34BD2481741E9AC40CBA9F1",
+                "indent": 0,
+                "expanded": true
+            },
+            {
+                "id": "gs.SetMessageArea",
+                "params": {
+                    "numberDomain": "com.degica.vnm.default",
+                    "number": 0,
+                    "box": {
+                        "x": 0,
+                        "y": 0,
+                        "size": {
+                            "width": 300,
+                            "height": 100
+                        }
+                    }
+                },
+                "uid": "92B426D688277148D24864C32DE2C7C5B0DD",
+                "indent": 0
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": "BF7CB12110894142C299D341A545C910AA86",
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "나는 바보다"
+                    },
+                    "position": 0,
+                    "characterId": 0,
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "uid": "185A447F0871F24DA57A9E68A3D6A98E91DB",
+                "indent": 0,
+                "expanded": true
+            }
+        ],
+        "livePreviewDisabled": false,
+        "order": 1,
+        "stringVariables": [
+            {
+                "name": "",
+                "index": 0,
+                "scope": 0
+            }
+        ],
+        "numberVariables": [
+            {
+                "name": "",
+                "index": 0,
+                "scope": 0
+            }
+        ]
+    },
+    "summary": [
+        "name",
+        "type",
+        "parentId",
+        "o",
+        "chapterUid",
+        "order"
+    ],
+    "externalItems": []
+}
