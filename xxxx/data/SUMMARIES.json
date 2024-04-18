@@ -820,6 +820,15 @@
                 "order": 1
             }
         },
+        "3305C56CKBF5BA44BFS8614EE4B277E49F6A": {
+            "items": {
+                "name": "Sample Scene",
+                "type": "vn.scene",
+                "parentId": "3EB0897BK4EAAA43A8SA91DEE65923801AB3",
+                "chapterUid": "3EB0897BK4EAAA43A8SA91DEE65923801AB3",
+                "order": 0
+            }
+        },
         "310BAD46K234CA48DBSABF0EE1601511F062": {
             "items": {
                 "name": "Component_MessageBehavior",
@@ -5515,15 +5524,6 @@
             "items": {
                 "name": "Set Input Session",
                 "type": "event_command"
-            }
-        },
-        "EB4EAC15529D80416E18AF0179563366C312": {
-            "items": {
-                "name": "test",
-                "type": "vn.scene",
-                "parentId": "3EB0897BK4EAAA43A8SA91DEE65923801AB3",
-                "chapterUid": "3EB0897BK4EAAA43A8SA91DEE65923801AB3",
-                "order": 1
             }
         }
     }
