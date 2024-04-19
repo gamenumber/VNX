@@ -2649,7 +2649,7 @@
         },
         "5C079A01512B3743D258CDA1897DA16CCF1A": {
             "items": {
-                "name": "Victor",
+                "name": "이민호",
                 "type": "data_record",
                 "order": 11
             }
@@ -5524,6 +5524,15 @@
             "items": {
                 "name": "Set Input Session",
                 "type": "event_command"
+            }
+        },
+        "C6B028E614F2E64F5E2A302872AC4B59293F": {
+            "items": {
+                "name": "test",
+                "type": "vn.scene",
+                "parentId": "3EB0897BK4EAAA43A8SA91DEE65923801AB3",
+                "chapterUid": "3EB0897BK4EAAA43A8SA91DEE65923801AB3",
+                "order": 1
             }
         }
     }
