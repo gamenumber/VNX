@@ -3,7 +3,7 @@
     "isLoaded": true,
     "lastModificationTime": 0,
     "items": {
-        "name": "이민호",
+        "name": "Victor",
         "type": "data_record",
         "order": 11,
         "category": "characters",
@@ -23,7 +23,7 @@
         "data": {
             "name": {
                 "lcId": "F43BC25B712A764D868A3298BE2B0C571927",
-                "defaultText": "이민호"
+                "defaultText": "Victor"
             },
             "textColor": {
                 "red": 255,

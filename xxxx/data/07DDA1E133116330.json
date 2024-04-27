@@ -513,8 +513,7 @@
                 "name": "",
                 "scope": 1,
                 "index": 0,
-                "changed": true,
-                "domain": "com.degica.vnm.default"
+                "changed": true
             }
         ],
         "booleans": [

@@ -10,43 +10,16 @@
         "order": 0,
         "commands": [
             {
-                "id": "gs.PlayMusic",
+                "id": "vn.L2DJoinScene",
                 "params": {
-                    "music": {
-                        "name": "Tutorial_-_Good_Mood.ogg",
-                        "volume": 100,
-                        "playbackRate": 100,
-                        "folderPath": "Audio/Music"
+                    "viewport": {
+                        "type": "scene"
                     },
-                    "fadeInDuration": 0,
-                    "playTime": {
-                        "min": 10,
-                        "max": 30
-                    },
-                    "playRange": {
-                        "start": 10,
-                        "end": 20
-                    },
-                    "playType": 0,
-                    "fieldFlags": {
-                        "music.volume": 1,
-                        "music.playbackRate": 1,
-                        "fadeInDuration": 1
-                    },
-                    "previewBackground": {
-                        "name": "$live_preview_snapshot"
-                    },
-                    "loop": 1,
-                    "waitForCompletion": 0
-                },
-                "indent": 0,
-                "uid": "D8970CAA6E90D04EA44B0C56DECCEA62E1C8"
-            },
-            {
-                "id": "vn.ChangeBackground",
-                "params": {
-                    "graphic": {
-                        "name": "Bench_Morning.png",
+                    "predefinedPositionId": 0,
+                    "characterId": "C54A6B5403D328410F7878023320B6E19AF2",
+                    "model": {
+                        "name": "Epsilon.model.live2d",
+                        "folderPath": "Live2D",
                         "hue": 0,
                         "opacity": 255,
                         "blending": 0,
@@ -55,60 +28,12 @@
                             "green": 0,
                             "blue": 0,
                             "grey": 0
-                        },
-                        "folderPath": "Graphics/Backgrounds/Date Locations"
-                    },
-                    "layer": 0,
-                    "duration": 0,
-                    "waitForCompletion": 1,
-                    "blendMode": 0,
-                    "origin": 0,
-                    "zOrder": 0,
-                    "loopVertical": 0,
-                    "loopHorizontal": 0,
-                    "easing": {
-                        "type": 0,
-                        "inOut": 1
-                    },
-                    "animation": {
-                        "type": 1,
-                        "movement": 0,
-                        "mask": {
-                            "graphic": null,
-                            "vague": 30
                         }
                     },
-                    "fieldFlags": {
-                        "duration": 1,
-                        "easing.type": 1,
-                        "animation.type": 0,
-                        "origin": 1,
-                        "zOrder": 1,
-                        "blendMode": 1,
-                        "loopVertical": 1,
-                        "loopHorizontal": 1
-                    },
-                    "previewBackground": {
-                        "name": "$live_preview_snapshot"
-                    },
-                    "viewport": {
-                        "type": "scene"
-                    }
-                },
-                "indent": 0,
-                "uid": "11CAF4887C77414E518B4FF5B4C99FAC4BD8",
-                "expanded": false
-            },
-            {
-                "id": "vn.CharacterJoinScene",
-                "params": {
-                    "predefinedPositionId": 1,
-                    "expressionId": null,
-                    "characterId": "D817084774AB154CCE68B7B2587B0058EBFA",
                     "zOrder": 0,
                     "origin": 0,
                     "blendMode": 0,
-                    "positionType": 0,
+                    "positionType": 1,
                     "motionBlur": {
                         "enabled": 0,
                         "delay": 2,
@@ -116,11 +41,16 @@
                         "dissolveSpeed": 3
                     },
                     "position": {
-                        "x": 0,
-                        "y": 0
+                        "x": 396,
+                        "y": -12,
+                        "zoom": {
+                            "x": 1,
+                            "y": 1,
+                            "d": 1
+                        }
                     },
                     "animation": {
-                        "type": 0,
+                        "type": 1,
                         "movement": 0,
                         "mask": {
                             "graphic": null,
@@ -132,75 +62,1029 @@
                         "inOut": 0
                     },
                     "duration": 0,
-                    "waitForCompletion": 1,
+                    "waitForCompletion": 0,
                     "fieldFlags": {
                         "duration": 1
                     },
-                    "viewport": {
-                        "type": "scene"
+                    "previewBackground": {
+                        "name": "",
+                        "folderPath": ""
                     }
                 },
-                "indent": 0,
-                "uid": "2D4A01253DE3D447FD1B9D8213C0C90A18CF"
+                "uid": "143148617CCAF64A078BF786D17B241B714C",
+                "indent": 0
             },
             {
-                "id": "vn.MessageBoxVisibility",
+                "id": "vn.L2DSettings",
                 "params": {
-                    "duration": 30,
-                    "waitForCompletion": true,
-                    "visible": 1,
-                    "animation": {
-                        "type": 0,
-                        "movement": 3,
-                        "mask": {
-                            "graphic": null,
-                            "vague": 30
+                    "characterId": "C54A6B5403D328410F7878023320B6E19AF2",
+                    "eyeBlink": {
+                        "enabled": 1,
+                        "interval": 4000,
+                        "closedMotionTime": 50,
+                        "closingMotionTime": 100,
+                        "openingMotionTime": 150
+                    },
+                    "breathIntensity": 1,
+                    "idleIntensity": 1,
+                    "lipSyncSensitivity": 1,
+                    "fieldFlags": {
+                        "breathIntensity": 1,
+                        "idleIntensity": 1,
+                        "lipSyncSensitivity": 1
+                    }
+                },
+                "uid": "F02FA9892A80D141B17AE2D8ED670F411E0F",
+                "indent": 0
+            },
+            {
+                "id": "vn.L2DExpression",
+                "params": {
+                    "characterId": "C54A6B5403D328410F7878023320B6E19AF2",
+                    "data": {
+                        "model": {
+                            "name": "Epsilon.model.live2d",
+                            "folderPath": "Live2D",
+                            "hue": 0,
+                            "opacity": 255,
+                            "blending": 0,
+                            "tone": {
+                                "red": 0,
+                                "green": 0,
+                                "blue": 0
+                            }
+                        },
+                        "expression": "f01.exp.json",
+                        "position": {
+                            "x": 0,
+                            "y": 0,
+                            "zoom": {
+                                "x": 1,
+                                "y": 1,
+                                "d": 1
+                            }
                         }
                     },
+                    "fadeInTime": 1000,
+                    "fieldFlags": {
+                        "fadeInTime": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "7A352AE47EAF52452A6AEE049E4359C22BC2",
+                "indent": 0
+            },
+            {
+                "id": "vn.L2DExpression",
+                "params": {
+                    "characterId": "C54A6B5403D328410F7878023320B6E19AF2",
+                    "data": {
+                        "model": {
+                            "name": "Epsilon.model.live2d",
+                            "folderPath": "Live2D",
+                            "hue": 0,
+                            "opacity": 255,
+                            "blending": 0,
+                            "tone": {
+                                "red": 0,
+                                "green": 0,
+                                "blue": 0
+                            }
+                        },
+                        "expression": "f02.exp.json",
+                        "position": {
+                            "x": 0,
+                            "y": 0,
+                            "zoom": {
+                                "x": 1,
+                                "y": 1,
+                                "d": 1
+                            }
+                        }
+                    },
+                    "fadeInTime": 1000,
+                    "fieldFlags": {
+                        "fadeInTime": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "73EEBB12813F58491B987C39FE4AFE5500FF",
+                "indent": 0
+            },
+            {
+                "id": "vn.L2DExpression",
+                "params": {
+                    "characterId": "C54A6B5403D328410F7878023320B6E19AF2",
+                    "data": {
+                        "model": {
+                            "name": "Epsilon.model.live2d",
+                            "folderPath": "Live2D",
+                            "hue": 0,
+                            "opacity": 255,
+                            "blending": 0,
+                            "tone": {
+                                "red": 0,
+                                "green": 0,
+                                "blue": 0
+                            }
+                        },
+                        "expression": "f03.exp.json",
+                        "position": {
+                            "x": 0,
+                            "y": 0,
+                            "zoom": {
+                                "x": 1,
+                                "y": 1,
+                                "d": 1
+                            }
+                        }
+                    },
+                    "fadeInTime": 1000,
+                    "fieldFlags": {
+                        "fadeInTime": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "A8C16D2A680C844FFC6B19A84D3663A1D132",
+                "indent": 0
+            },
+            {
+                "id": "vn.L2DExpression",
+                "params": {
+                    "characterId": "C54A6B5403D328410F7878023320B6E19AF2",
+                    "data": {
+                        "model": {
+                            "name": "Epsilon.model.live2d",
+                            "folderPath": "Live2D",
+                            "hue": 0,
+                            "opacity": 255,
+                            "blending": 0,
+                            "tone": {
+                                "red": 0,
+                                "green": 0,
+                                "blue": 0
+                            }
+                        },
+                        "expression": "f04.exp.json",
+                        "position": {
+                            "x": 0,
+                            "y": 0,
+                            "zoom": {
+                                "x": 1,
+                                "y": 1,
+                                "d": 1
+                            }
+                        }
+                    },
+                    "fadeInTime": 1000,
+                    "fieldFlags": {
+                        "fadeInTime": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "25C538E7355BF943AA589C1362A5A0E46E68",
+                "indent": 0
+            },
+            {
+                "id": "vn.L2DExpression",
+                "params": {
+                    "characterId": "C54A6B5403D328410F7878023320B6E19AF2",
+                    "data": {
+                        "model": {
+                            "name": "Epsilon.model.live2d",
+                            "folderPath": "Live2D",
+                            "hue": 0,
+                            "opacity": 255,
+                            "blending": 0,
+                            "tone": {
+                                "red": 0,
+                                "green": 0,
+                                "blue": 0
+                            }
+                        },
+                        "expression": "f05.exp.json",
+                        "position": {
+                            "x": 0,
+                            "y": 0,
+                            "zoom": {
+                                "x": 1,
+                                "y": 1,
+                                "d": 1
+                            }
+                        }
+                    },
+                    "fadeInTime": 1000,
+                    "fieldFlags": {
+                        "fadeInTime": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "DE721FA88D0AA242900BAA03D3C611243813",
+                "indent": 0
+            },
+            {
+                "id": "vn.L2DExpression",
+                "params": {
+                    "characterId": "C54A6B5403D328410F7878023320B6E19AF2",
+                    "data": {
+                        "model": {
+                            "name": "Epsilon.model.live2d",
+                            "folderPath": "Live2D",
+                            "hue": 0,
+                            "opacity": 255,
+                            "blending": 0,
+                            "tone": {
+                                "red": 0,
+                                "green": 0,
+                                "blue": 0
+                            }
+                        },
+                        "expression": "f06.exp.json",
+                        "position": {
+                            "x": 0,
+                            "y": 0,
+                            "zoom": {
+                                "x": 1,
+                                "y": 1,
+                                "d": 1
+                            }
+                        }
+                    },
+                    "fadeInTime": 1000,
+                    "fieldFlags": {
+                        "fadeInTime": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "4A5115152D7316418778EEB76E4CFBEC7008",
+                "indent": 0
+            },
+            {
+                "id": "vn.L2DExpression",
+                "params": {
+                    "characterId": "C54A6B5403D328410F7878023320B6E19AF2",
+                    "data": {
+                        "model": {
+                            "name": "Epsilon.model.live2d",
+                            "folderPath": "Live2D",
+                            "hue": 0,
+                            "opacity": 255,
+                            "blending": 0,
+                            "tone": {
+                                "red": 0,
+                                "green": 0,
+                                "blue": 0
+                            }
+                        },
+                        "expression": "f07.exp.json",
+                        "position": {
+                            "x": 0,
+                            "y": 0,
+                            "zoom": {
+                                "x": 1,
+                                "y": 1,
+                                "d": 1
+                            }
+                        }
+                    },
+                    "fadeInTime": 1000,
+                    "fieldFlags": {
+                        "fadeInTime": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "86032C5F5FFA6647025ACAE4E6253D5CF919",
+                "indent": 0
+            },
+            {
+                "id": "vn.L2DExpression",
+                "params": {
+                    "characterId": "C54A6B5403D328410F7878023320B6E19AF2",
+                    "data": {
+                        "model": {
+                            "name": "Epsilon.model.live2d",
+                            "folderPath": "Live2D",
+                            "hue": 0,
+                            "opacity": 255,
+                            "blending": 0,
+                            "tone": {
+                                "red": 0,
+                                "green": 0,
+                                "blue": 0
+                            }
+                        },
+                        "expression": "f08.exp.json",
+                        "position": {
+                            "x": 0,
+                            "y": 0,
+                            "zoom": {
+                                "x": 1,
+                                "y": 1,
+                                "d": 1
+                            }
+                        }
+                    },
+                    "fadeInTime": 1000,
+                    "fieldFlags": {
+                        "fadeInTime": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "E628A24B3094D84AFA19F121188E6080EFE4",
+                "indent": 0
+            },
+            {
+                "id": "vn.L2DMotion",
+                "params": {
+                    "characterId": "C54A6B5403D328410F7878023320B6E19AF2",
+                    "loop": 1,
+                    "fadeInTime": 1000,
+                    "data": {
+                        "model": {
+                            "name": "Epsilon.model.live2d",
+                            "folderPath": "Live2D",
+                            "hue": 0,
+                            "opacity": 255,
+                            "blending": 0,
+                            "tone": {
+                                "red": 0,
+                                "green": 0,
+                                "blue": 0
+                            }
+                        },
+                        "motion": "Epsilon_idle_01.mtn",
+                        "position": {
+                            "x": 0,
+                            "y": 0,
+                            "zoom": {
+                                "x": 1,
+                                "y": 1,
+                                "d": 1
+                            }
+                        }
+                    },
+                    "waitForCompletion": 1,
+                    "fieldFlags": {
+                        "fadeInTime": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "B72B2B8D69CFB644943A038324F7D097D304",
+                "indent": 0
+            },
+            {
+                "id": "vn.L2DMotion",
+                "params": {
+                    "characterId": "C54A6B5403D328410F7878023320B6E19AF2",
+                    "loop": 1,
+                    "fadeInTime": 1000,
+                    "data": {
+                        "model": {
+                            "name": "Epsilon.model.live2d",
+                            "folderPath": "Live2D",
+                            "hue": 0,
+                            "opacity": 255,
+                            "blending": 0,
+                            "tone": {
+                                "red": 0,
+                                "green": 0,
+                                "blue": 0
+                            }
+                        },
+                        "motion": "Epsilon_m_01.mtn",
+                        "position": {
+                            "x": 0,
+                            "y": 0,
+                            "zoom": {
+                                "x": 1,
+                                "y": 1,
+                                "d": 1
+                            }
+                        }
+                    },
+                    "waitForCompletion": 1,
+                    "fieldFlags": {
+                        "fadeInTime": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "E0D13BF236B8F84D5519E188E8F02DCB4F43",
+                "indent": 0
+            },
+            {
+                "id": "vn.L2DMotion",
+                "params": {
+                    "characterId": "C54A6B5403D328410F7878023320B6E19AF2",
+                    "loop": 1,
+                    "fadeInTime": 1000,
+                    "data": {
+                        "model": {
+                            "name": "Epsilon.model.live2d",
+                            "folderPath": "Live2D",
+                            "hue": 0,
+                            "opacity": 255,
+                            "blending": 0,
+                            "tone": {
+                                "red": 0,
+                                "green": 0,
+                                "blue": 0
+                            }
+                        },
+                        "motion": "Epsilon_m_02.mtn",
+                        "position": {
+                            "x": 0,
+                            "y": 0,
+                            "zoom": {
+                                "x": 1,
+                                "y": 1,
+                                "d": 1
+                            }
+                        }
+                    },
+                    "waitForCompletion": 1,
+                    "fieldFlags": {
+                        "fadeInTime": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "EE5BC6322FC105461989BA59C39358FF12F4",
+                "indent": 0
+            },
+            {
+                "id": "vn.L2DMotion",
+                "params": {
+                    "characterId": "C54A6B5403D328410F7878023320B6E19AF2",
+                    "loop": 1,
+                    "fadeInTime": 1000,
+                    "data": {
+                        "model": {
+                            "name": "Epsilon.model.live2d",
+                            "folderPath": "Live2D",
+                            "hue": 0,
+                            "opacity": 255,
+                            "blending": 0,
+                            "tone": {
+                                "red": 0,
+                                "green": 0,
+                                "blue": 0
+                            }
+                        },
+                        "motion": "Epsilon_m_03.mtn",
+                        "position": {
+                            "x": 0,
+                            "y": 0,
+                            "zoom": {
+                                "x": 1,
+                                "y": 1,
+                                "d": 1
+                            }
+                        }
+                    },
+                    "waitForCompletion": 1,
+                    "fieldFlags": {
+                        "fadeInTime": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "98FE63BD90D2B64F7D490A54C811F605BB63",
+                "indent": 0
+            },
+            {
+                "id": "vn.L2DMotion",
+                "params": {
+                    "characterId": "C54A6B5403D328410F7878023320B6E19AF2",
+                    "loop": 1,
+                    "fadeInTime": 1000,
+                    "data": {
+                        "model": {
+                            "name": "Epsilon.model.live2d",
+                            "folderPath": "Live2D",
+                            "hue": 0,
+                            "opacity": 255,
+                            "blending": 0,
+                            "tone": {
+                                "red": 0,
+                                "green": 0,
+                                "blue": 0
+                            }
+                        },
+                        "motion": "Epsilon_m_04.mtn",
+                        "position": {
+                            "x": 0,
+                            "y": 0,
+                            "zoom": {
+                                "x": 1,
+                                "y": 1,
+                                "d": 1
+                            }
+                        }
+                    },
+                    "waitForCompletion": 1,
+                    "fieldFlags": {
+                        "fadeInTime": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "F00DC11F8018E74B52090B046A12B9FB90EC",
+                "indent": 0
+            },
+            {
+                "id": "vn.L2DMotion",
+                "params": {
+                    "characterId": "C54A6B5403D328410F7878023320B6E19AF2",
+                    "loop": 1,
+                    "fadeInTime": 1000,
+                    "data": {
+                        "model": {
+                            "name": "Epsilon.model.live2d",
+                            "folderPath": "Live2D",
+                            "hue": 0,
+                            "opacity": 255,
+                            "blending": 0,
+                            "tone": {
+                                "red": 0,
+                                "green": 0,
+                                "blue": 0
+                            }
+                        },
+                        "motion": "Epsilon_m_05.mtn",
+                        "position": {
+                            "x": 0,
+                            "y": 0,
+                            "zoom": {
+                                "x": 1,
+                                "y": 1,
+                                "d": 1
+                            }
+                        }
+                    },
+                    "waitForCompletion": 1,
+                    "fieldFlags": {
+                        "fadeInTime": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "EDBFE25E8AD80542FB1AFCB0B8CFF714738F",
+                "indent": 0
+            },
+            {
+                "id": "vn.L2DMotion",
+                "params": {
+                    "characterId": "C54A6B5403D328410F7878023320B6E19AF2",
+                    "loop": 1,
+                    "fadeInTime": 1000,
+                    "data": {
+                        "model": {
+                            "name": "Epsilon.model.live2d",
+                            "folderPath": "Live2D",
+                            "hue": 0,
+                            "opacity": 255,
+                            "blending": 0,
+                            "tone": {
+                                "red": 0,
+                                "green": 0,
+                                "blue": 0
+                            }
+                        },
+                        "motion": "Epsilon_m_06.mtn",
+                        "position": {
+                            "x": 0,
+                            "y": 0,
+                            "zoom": {
+                                "x": 1,
+                                "y": 1,
+                                "d": 1
+                            }
+                        }
+                    },
+                    "waitForCompletion": 1,
+                    "fieldFlags": {
+                        "fadeInTime": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "653A4B7761B4C445C79A42C4B477D6B68B6A",
+                "indent": 0
+            },
+            {
+                "id": "vn.L2DMotion",
+                "params": {
+                    "characterId": "C54A6B5403D328410F7878023320B6E19AF2",
+                    "loop": 1,
+                    "fadeInTime": 1000,
+                    "data": {
+                        "model": {
+                            "name": "Epsilon.model.live2d",
+                            "folderPath": "Live2D",
+                            "hue": 0,
+                            "opacity": 255,
+                            "blending": 0,
+                            "tone": {
+                                "red": 0,
+                                "green": 0,
+                                "blue": 0
+                            }
+                        },
+                        "motion": "Epsilon_m_07.mtn",
+                        "position": {
+                            "x": 0,
+                            "y": 0,
+                            "zoom": {
+                                "x": 1,
+                                "y": 1,
+                                "d": 1
+                            }
+                        }
+                    },
+                    "waitForCompletion": 1,
+                    "fieldFlags": {
+                        "fadeInTime": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "270459732A52414E1F7BD6664CA6D928B592",
+                "indent": 0
+            },
+            {
+                "id": "vn.L2DMotion",
+                "params": {
+                    "characterId": "C54A6B5403D328410F7878023320B6E19AF2",
+                    "loop": 1,
+                    "fadeInTime": 1000,
+                    "data": {
+                        "model": {
+                            "name": "Epsilon.model.live2d",
+                            "folderPath": "Live2D",
+                            "hue": 0,
+                            "opacity": 255,
+                            "blending": 0,
+                            "tone": {
+                                "red": 0,
+                                "green": 0,
+                                "blue": 0
+                            }
+                        },
+                        "motion": "Epsilon_m_08.mtn",
+                        "position": {
+                            "x": 0,
+                            "y": 0,
+                            "zoom": {
+                                "x": 1,
+                                "y": 1,
+                                "d": 1
+                            }
+                        }
+                    },
+                    "waitForCompletion": 1,
+                    "fieldFlags": {
+                        "fadeInTime": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "B43B814285FCE342B17BD82560AFB064D95F",
+                "indent": 0
+            },
+            {
+                "id": "vn.L2DMotion",
+                "params": {
+                    "characterId": "C54A6B5403D328410F7878023320B6E19AF2",
+                    "loop": 1,
+                    "fadeInTime": 1000,
+                    "data": {
+                        "model": {
+                            "name": "Epsilon.model.live2d",
+                            "folderPath": "Live2D",
+                            "hue": 0,
+                            "opacity": 255,
+                            "blending": 0,
+                            "tone": {
+                                "red": 0,
+                                "green": 0,
+                                "blue": 0
+                            }
+                        },
+                        "motion": "Epsilon_m_sp_01.mtn",
+                        "position": {
+                            "x": 0,
+                            "y": 0,
+                            "zoom": {
+                                "x": 1,
+                                "y": 1,
+                                "d": 1
+                            }
+                        }
+                    },
+                    "waitForCompletion": 1,
+                    "fieldFlags": {
+                        "fadeInTime": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "17DCD0EE6E534844012A7AC4E5B7E8E61F24",
+                "indent": 0
+            },
+            {
+                "id": "vn.L2DMotion",
+                "params": {
+                    "characterId": "C54A6B5403D328410F7878023320B6E19AF2",
+                    "loop": 1,
+                    "fadeInTime": 1000,
+                    "data": {
+                        "model": {
+                            "name": "Epsilon.model.live2d",
+                            "folderPath": "Live2D",
+                            "hue": 0,
+                            "opacity": 255,
+                            "blending": 0,
+                            "tone": {
+                                "red": 0,
+                                "green": 0,
+                                "blue": 0
+                            }
+                        },
+                        "motion": "Epsilon_m_sp_02.mtn",
+                        "position": {
+                            "x": 0,
+                            "y": 0,
+                            "zoom": {
+                                "x": 1,
+                                "y": 1,
+                                "d": 1
+                            }
+                        }
+                    },
+                    "waitForCompletion": 0,
+                    "fieldFlags": {
+                        "fadeInTime": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "B4A1495C7F5DD54F5A680836DA2A22530DB1",
+                "indent": 0
+            },
+            {
+                "id": "vn.L2DMotion",
+                "params": {
+                    "characterId": "C54A6B5403D328410F7878023320B6E19AF2",
+                    "loop": 1,
+                    "fadeInTime": 1000,
+                    "data": {
+                        "model": {
+                            "name": "Epsilon.model.live2d",
+                            "folderPath": "Live2D",
+                            "hue": 0,
+                            "opacity": 255,
+                            "blending": 0,
+                            "tone": {
+                                "red": 0,
+                                "green": 0,
+                                "blue": 0
+                            }
+                        },
+                        "motion": "Epsilon_idle_01.mtn",
+                        "position": {
+                            "x": 0,
+                            "y": 0,
+                            "zoom": {
+                                "x": 1,
+                                "y": 1,
+                                "d": 1
+                            }
+                        }
+                    },
+                    "waitForCompletion": 1,
+                    "fieldFlags": {
+                        "fadeInTime": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "AD86276C325BF1464D39E6C67149AB0E79A2",
+                "indent": 0
+            },
+            {
+                "id": "vn.L2DMotion",
+                "params": {
+                    "characterId": "C54A6B5403D328410F7878023320B6E19AF2",
+                    "loop": 1,
+                    "fadeInTime": 1000,
+                    "data": {
+                        "model": {
+                            "name": "Epsilon.model.live2d",
+                            "folderPath": "Live2D",
+                            "hue": 0,
+                            "opacity": 255,
+                            "blending": 0,
+                            "tone": {
+                                "red": 0,
+                                "green": 0,
+                                "blue": 0
+                            }
+                        },
+                        "motion": "Epsilon_m_sp_03.mtn",
+                        "position": {
+                            "x": 0,
+                            "y": 0,
+                            "zoom": {
+                                "x": 1,
+                                "y": 1,
+                                "d": 1
+                            }
+                        }
+                    },
+                    "waitForCompletion": 0,
+                    "fieldFlags": {
+                        "fadeInTime": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "C86786DA19CD46494A5AAFB34FEF87231766",
+                "indent": 0
+            },
+            {
+                "id": "vn.L2DMotion",
+                "params": {
+                    "characterId": "C54A6B5403D328410F7878023320B6E19AF2",
+                    "loop": 1,
+                    "fadeInTime": 1000,
+                    "data": {
+                        "model": {
+                            "name": "Epsilon.model.live2d",
+                            "folderPath": "Live2D",
+                            "hue": 0,
+                            "opacity": 255,
+                            "blending": 0,
+                            "tone": {
+                                "red": 0,
+                                "green": 0,
+                                "blue": 0
+                            }
+                        },
+                        "motion": "Epsilon_m_sp_04.mtn",
+                        "position": {
+                            "x": 0,
+                            "y": 0,
+                            "zoom": {
+                                "x": 1,
+                                "y": 1,
+                                "d": 1
+                            }
+                        }
+                    },
+                    "waitForCompletion": 0,
+                    "fieldFlags": {
+                        "fadeInTime": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "2D5A02E894BD354FB4798DE274CBFED0B4CB",
+                "indent": 0
+            },
+            {
+                "id": "gs.TintPicture",
+                "params": {
+                    "numberDomain": "com.degica.vnm.default",
+                    "number": 0,
                     "easing": {
                         "type": 0,
                         "inOut": 1
                     },
-                    "fieldFlags": {
-                        "duration": 1
+                    "tone": {
+                        "red": 0,
+                        "green": 0,
+                        "blue": 0,
+                        "grey": 0
                     },
-                    "id": "messageBox"
+                    "duration": 0,
+                    "waitForCompletion": 0
                 },
-                "indent": 0,
-                "uid": "DCDA1E2E60D6C849B48AC3902F17BE0D5007"
+                "uid": "9F76F4572421C6466578CC82BCC525F21043",
+                "indent": 0
             },
             {
-                "id": "gs.ShowMessage",
+                "id": "vn.L2DMotion",
                 "params": {
-                    "waitForCompletion": 1,
-                    "duration": 15,
-                    "expressionId": null,
-                    "custom": {
-                        "object": {
+                    "characterId": "C54A6B5403D328410F7878023320B6E19AF2",
+                    "loop": 1,
+                    "fadeInTime": 1000,
+                    "data": {
+                        "model": {
+                            "name": "Epsilon.model.live2d",
+                            "folderPath": "Live2D",
+                            "hue": 0,
+                            "opacity": 255,
+                            "blending": 0,
+                            "tone": {
+                                "red": 0,
+                                "green": 0,
+                                "blue": 0
+                            }
+                        },
+                        "motion": "Epsilon_m_sp_05.mtn",
+                        "position": {
                             "x": 0,
                             "y": 0,
-                            "size": {
-                                "width": 300,
-                                "height": 100
+                            "zoom": {
+                                "x": 1,
+                                "y": 1,
+                                "d": 1
                             }
                         }
                     },
-                    "message": {
-                        "lcId": "D700A9F7718E204480781CD1762295D8199B",
-                        "defaultText": "Hey! What are you doing here?"
-                    },
-                    "position": 0,
-                    "characterId": "D817084774AB154CCE68B7B2587B0058EBFA",
-                    "partial": 0,
+                    "waitForCompletion": 0,
                     "fieldFlags": {
-                        "duration": 1
+                        "fadeInTime": 1
                     },
-                    "expressions": [],
-                    "animations": []
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
                 },
-                "indent": 0,
-                "uid": "AE1D9B194E38874E6B99C335DA1AA7359B3A",
-                "expanded": true
+                "uid": "36853B7218B9914EB819E7A138036988A55B",
+                "indent": 0
+            },
+            {
+                "id": "vn.L2DMotion",
+                "params": {
+                    "characterId": "C54A6B5403D328410F7878023320B6E19AF2",
+                    "loop": 1,
+                    "fadeInTime": 1000,
+                    "data": {
+                        "model": {
+                            "name": "Epsilon.model.live2d",
+                            "folderPath": "Live2D",
+                            "hue": 0,
+                            "opacity": 255,
+                            "blending": 0,
+                            "tone": {
+                                "red": 0,
+                                "green": 0,
+                                "blue": 0
+                            }
+                        },
+                        "motion": "Epsilon_shake_01.mtn",
+                        "position": {
+                            "x": 0,
+                            "y": 0,
+                            "zoom": {
+                                "x": 1,
+                                "y": 1,
+                                "d": 1
+                            }
+                        }
+                    },
+                    "waitForCompletion": 0,
+                    "fieldFlags": {
+                        "fadeInTime": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "2424F1E243E02445965815A6F2B12CEAFF0C",
+                "indent": 0
             }
         ],
         "background": {
@@ -234,7 +1118,8 @@
             {
                 "name": "Super Loc",
                 "index": 2,
-                "scope": 0
+                "scope": 0,
+                "domain": "com.degica.vnm.default"
             }
         ],
         "booleanVariables": [
@@ -248,7 +1133,8 @@
             {
                 "name": "",
                 "index": 0,
-                "scope": 0
+                "scope": 0,
+                "domain": "com.degica.vnm.default"
             }
         ],
         "listVariables": [
